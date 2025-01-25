@@ -1,88 +1,92 @@
-# Kornati Tours 🏝️
+# Kornati Tours Management System
 
-A modern web application for exploring and booking tours in the beautiful Kornati Islands archipelago. Built with Laravel 11 and React, offering a seamless user experience for discovering the natural wonders of Croatia's coast.
+A modern tour management system built with Laravel and Filament, designed to streamline tour operations and bookings for Kornati Islands archipelago tours. This system provides a robust platform for managing tours, bookings, and customer interactions.
 
-## 🚀 Tech Stack
+![Current Version](https://img.shields.io/badge/version-0.2.0-blue.svg)
+![PHP Version](https://img.shields.io/badge/PHP-8.2+-green.svg)
+![Laravel Version](https://img.shields.io/badge/Laravel-10.x-red.svg)
 
-- **Backend:** Laravel 11
-- **Frontend:** React + Vite
-- **Styling:** Tailwind CSS
-- **Database:** MySQL
-- **Development:** Hot Module Replacement (HMR)
+## About
 
-## ✨ Features
+Kornati Tours Management System is a specialized software solution for managing boat tours and excursions in the Kornati Islands archipelago. It provides tour operators with tools for managing bookings, schedules, and customer interactions through an intuitive admin interface.
 
-- Modern React components with TypeScript
-- Laravel backend API
-- Real-time development with HMR
-- Responsive design with Tailwind CSS
-- Database-driven content management
-- Session handling and user authentication
+### Current Version: 0.2.0
+- Enhanced user management with role-based access
+- Theme support with custom branding
+- Improved UI/UX with loading indicators
+- Full SPA functionality
 
-## 🛠️ Local Development Setup
+## Features
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/heavymp/kornati-tours.git
-   cd kornati-tours
-   ```
+### User Management
+- Role-based access control (ADMIN and AGENT roles)
+- Secure authentication and authorization
+- User CRUD operations with proper validation
 
-2. **Install Dependencies**
-   ```bash
-   composer install
-   npm install
-   ```
+### Theme Support
+- Light and dark theme switching
+- Custom branding with theme-aware logos
+- Responsive design for all screen sizes
 
-3. **Environment Setup**
-   ```bash
-   cp .env.example .env
-   php artisan key:generate
-   ```
+### UI/UX
+- Loading indicators for better feedback
+- SPA-like navigation for smooth transitions
+- Organized navigation with proper grouping
 
-4. **Database Setup**
-   - Create a MySQL database named 'kornati_tours'
-   - Update .env with your database credentials
-   - Run migrations:
-     ```bash
-     php artisan migrate
-     ```
+## Requirements
 
-5. **Start Development Servers**
-   ```bash
-   # Terminal 1: Laravel Server
-   php artisan serve
+- PHP 8.2+
+- Laravel 10.x
+- Node.js & NPM
+- MySQL 8.0+
 
-   # Terminal 2: Vite Development Server
-   npm run dev
-   ```
+## Installation
 
-6. **Access the Application**
-   - Laravel: [http://localhost:8000](http://localhost:8000)
-   - Vite Dev Server: [http://localhost:5173](http://localhost:5173)
+1. Clone the repository:
+```bash
+git clone https://github.com/heavymp/kornati-tours.git
+```
 
-## 🌐 Production Deployment
+2. Install PHP dependencies:
+```bash
+composer install
+```
 
-1. Build frontend assets:
-   ```bash
-   npm run build
-   ```
+3. Install NPM dependencies:
+```bash
+npm install
+```
 
-2. Configure your web server to point to the `/public` directory
+4. Copy environment file and configure:
+```bash
+cp .env.example .env
+```
 
-3. Set up appropriate environment variables for production
+5. Generate application key:
+```bash
+php artisan key:generate
+```
 
-## 📝 Contributing
+6. Run migrations:
+```bash
+php artisan migrate
+```
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+7. Create admin user:
+```bash
+php artisan make:filament-user
+```
 
-## 📄 License
+## Development
 
-This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Build assets: `npm run dev`
+- Watch assets: `npm run watch`
+- Production build: `npm run build`
 
-## 🤝 Support
+## Version History
 
-For support, please open an issue in the GitHub repository or contact the development team. 
+See [CHANGELOG.md](CHANGELOG.md) for a detailed list of changes in each version.
+
+## License
+
+This project is proprietary software. All rights reserved. 
