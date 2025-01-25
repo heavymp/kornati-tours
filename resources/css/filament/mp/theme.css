@@ -1,0 +1,117 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@layer base {
+    :root {
+        --color-primary-50: 240 249 255;
+        --color-primary-100: 224 242 254;
+        --color-primary-200: 186 230 253;
+        --color-primary-300: 125 211 252;
+        --color-primary-400: 56 189 248;
+        --color-primary-500: 14 165 233;
+        --color-primary-600: 2 132 199;
+        --color-primary-700: 3 105 161;
+        --color-primary-800: 7 89 133;
+        --color-primary-900: 12 74 110;
+        --color-primary-950: 8 47 73;
+    }
+}
+
+@layer components {
+    /* Light mode styles */
+    .fi-sidebar {
+        @apply bg-white border-r border-gray-100 shadow-sm backdrop-blur-2xl;
+    }
+
+    .fi-sidebar-header {
+        @apply bg-white/80 backdrop-blur-xl border-b border-gray-100;
+    }
+
+    .fi-sidebar-item {
+        @apply text-gray-600 hover:bg-primary-50/80 hover:text-primary-600 focus:bg-primary-50/80 focus:text-primary-600 rounded-lg transition-all duration-200;
+    }
+
+    .fi-sidebar-item-active {
+        @apply bg-primary-50 text-primary-600 font-medium;
+    }
+
+    .fi-topbar {
+        @apply bg-white/80 backdrop-blur-xl border-b border-gray-100 shadow-sm;
+    }
+
+    .fi-main-ctn {
+        @apply bg-gray-50/50;
+    }
+
+    .fi-ta-header {
+        @apply bg-white/80 backdrop-blur-xl border-b border-gray-100;
+    }
+
+    .fi-ta-content {
+        @apply bg-white shadow-sm rounded-xl;
+    }
+
+    .fi-btn-color-primary {
+        @apply bg-primary-600 hover:bg-primary-500 focus:bg-primary-500 active:bg-primary-700 text-white shadow-sm hover:shadow-md transition-all duration-200;
+    }
+
+    .fi-input {
+        @apply bg-white border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 rounded-lg transition-all duration-200;
+    }
+
+    .fi-dropdown-panel {
+        @apply bg-white border border-gray-100 shadow-lg rounded-xl backdrop-blur-xl;
+    }
+
+    .fi-dropdown-list-item {
+        @apply hover:bg-primary-50/80 focus:bg-primary-50/80 rounded-lg transition-all duration-200;
+    }
+
+    /* Dark mode styles */
+    .dark .fi-sidebar {
+        @apply bg-gray-900/95 border-r border-gray-800 shadow-2xl;
+    }
+
+    .dark .fi-sidebar-header {
+        @apply bg-gray-900/90 backdrop-blur-xl border-b border-gray-800;
+    }
+
+    .dark .fi-sidebar-item {
+        @apply text-gray-400 hover:bg-primary-500/10 hover:text-primary-400 focus:bg-primary-500/10 focus:text-primary-400;
+    }
+
+    .dark .fi-sidebar-item-active {
+        @apply bg-primary-500/15 text-primary-400;
+    }
+
+    .dark .fi-topbar {
+        @apply bg-gray-900/90 backdrop-blur-xl border-b border-gray-800 shadow-2xl;
+    }
+
+    .dark .fi-main-ctn {
+        @apply bg-gray-950/90;
+    }
+
+    .dark .fi-ta-header {
+        @apply bg-gray-900/90 backdrop-blur-xl border-b border-gray-800;
+    }
+
+    .dark .fi-ta-content {
+        @apply bg-gray-900/80 shadow-2xl;
+    }
+
+    .dark .fi-btn-color-primary {
+        @apply bg-primary-600 hover:bg-primary-500 focus:bg-primary-500 active:bg-primary-700 text-white shadow-md hover:shadow-xl;
+    }
+
+    .dark .fi-input {
+        @apply bg-gray-900 border-gray-700 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20;
+    }
+
+    .dark .fi-dropdown-panel {
+        @apply bg-gray-900/95 border-gray-800 shadow-2xl;
+    }
+
+    .dark .fi-dropdown-list-item {
+        @apply hover:bg-primary-500/10 focus:bg-primary-500/10;
+    }
+} 
