@@ -2,7 +2,7 @@
 
 A modern tour management system built with Laravel and Filament, designed to streamline tour operations and bookings for Kornati Islands archipelago tours. This system provides a robust platform for managing tours, bookings, and customer interactions.
 
-![Current Version](https://img.shields.io/badge/version-0.2.0-blue.svg)
+![Current Version](https://img.shields.io/badge/version-0.3.0-blue.svg)
 ![PHP Version](https://img.shields.io/badge/PHP-8.2+-green.svg)
 ![Laravel Version](https://img.shields.io/badge/Laravel-10.x-red.svg)
 
@@ -10,11 +10,12 @@ A modern tour management system built with Laravel and Filament, designed to str
 
 Kornati Tours Management System is a specialized software solution for managing boat tours and excursions in the Kornati Islands archipelago. It provides tour operators with tools for managing bookings, schedules, and customer interactions through an intuitive admin interface.
 
-### Current Version: 0.2.0
+### Current Version: 0.3.0
 - Enhanced user management with role-based access
 - Theme support with custom branding
 - Improved UI/UX with loading indicators
 - Full SPA functionality
+- Email system with Brevo integration
 
 ## Features
 
