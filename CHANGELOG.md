@@ -24,4 +24,13 @@ All notable changes to this project will be documented in this file.
 - Initial project setup with Laravel and Filament
 - Basic authentication system
 - Filament admin panel integration
-- Database migrations and configuration 
+- Database migrations and configuration
+
+## [0.3.0] - 2024-01-26
+
+### Added
+- Email configuration management through Brevo API
+  - Configurable email settings in admin panel
+  - Secure API key storage
+  - Test email functionality
+  - Automatic environment configuration 

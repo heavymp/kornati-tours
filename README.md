@@ -33,6 +33,11 @@ Kornati Tours Management System is a specialized software solution for managing 
 - SPA-like navigation for smooth transitions
 - Organized navigation with proper grouping
 
+### Email System
+- Configurable email settings
+- Secure API key management
+- Test email functionality
+
 ## Requirements
 
 - PHP 8.2+
@@ -89,4 +94,16 @@ See [CHANGELOG.md](CHANGELOG.md) for a detailed list of changes in each version.
 
 ## License
 
-This project is proprietary software. All rights reserved. 
+This project is proprietary software. All rights reserved.
+
+## Configuration
+
+### Email Settings
+
+The application uses Brevo for email delivery. To configure email settings:
+
+1. Log in to the admin panel
+2. Navigate to Settings > Email Settings
+3. Enter your Brevo API key
+4. Configure the "From" address and name
+5. Test the configuration using the test email feature 

@@ -18,6 +18,7 @@ use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use App\Filament\Resources\UserResource;
+use App\Filament\Pages\EmailSettings;
 
 class MpPanelProvider extends PanelProvider
 {
@@ -66,10 +67,10 @@ class MpPanelProvider extends PanelProvider
             ->darkMode()
             ->sidebarCollapsibleOnDesktop()
             ->navigationGroups([
+                'Administration',
+                'Settings',
                 'Tours',
                 'Bookings',
-                'Settings',
-                'Administration',
             ])
             ->resources([
                 UserResource::class,
@@ -81,6 +82,7 @@ class MpPanelProvider extends PanelProvider
             ])
             ->pages([
                 Pages\Dashboard::class,
+                EmailSettings::class,
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
